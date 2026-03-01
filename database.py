@@ -29,5 +29,5 @@ class Transaction(Base):
     timestamp = Column(DateTime, default=datetime.datetime.utcnow)
     status = Column(String)
 
-# Initialize database schema
+# Initialise database schema
 Base.metadata.create_all(bind=engine)
